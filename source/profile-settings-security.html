@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/profile-settings-security.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+//= templates_html/header.html
+<article>
+    //= templates_html/nav.html
+    <div class="page-container profile-settings">
+        <div class="title">Управление доступами</div>
+        <div class="first-table">
+            <div class="title"> Смена пароля </div>
+            <div class="row">
+                <div class="select-wrapper">
+                    <p class="control-label select_title"> Новый пароль </p>
+                    <div class="password-wrapper">
+                        <input id="password-field" type="password" class="input" name="password" value="Введите новый пароль">
+                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="control-label select_title"> Подтвердите новый пароль </p>
+                    <div class="password-wrapper">
+                        <input id="password-field-second" type="password" class="input" name="password" value="Введите новый пароль">
+                        <span toggle="#password-field-second" class="fa fa-fw fa-eye field-icon toggle-password-second"></span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button">Отправить</button>
+
+        </div>
+        <div class="second-table">
+            <h1 class="title"> Настройка двухэтапной аутентификации </h1>
+            <p class="text-style">
+                Для активации двухэтапной аутентификации отсканируйте штрих-код с помощью Вашего мобильного приложения.
+            </p>
+            <div class="wrapper">
+            <img class="qr-code" src="images/QR.png">
+            <div class="links">
+                <p class="text-style">
+                    Если штрих-код не распознается, то для настройки аккаунта в Вашем мобильном приложении введите ключ вручную
+                </p>
+                <div class="link-wrapper">
+                    <h1 class="title"> G3WQ SFTO EDYJ KUOT XVCP NUVQ SUCW S44P J2PN 2IR7 2CUK G7JZ SETM 6OSJ FHWL JJZW </h1>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M22.3088 7.021C21.8573 7.021 21.2592 7.011 20.5146 7.011C18.6987 7.011 17.2055 5.508 17.2055 3.675V0.459C17.2055 0.206 17.0036 0 16.753 0H11.4636C8.99517 0 7 2.026 7 4.509V15.284C7 17.889 9.09022 20 11.6696 20H19.5463C22.0058 20 24 17.987 24 15.502V7.471C24 7.217 23.799 7.012 23.5475 7.013C23.1247 7.016 22.6177 7.021 22.3088 7.021Z" fill="#1B1393"/>
+                        <path opacity="0.4" d="M19.5839 0.56737C19.2849 0.25637 18.7629 0.47037 18.7629 0.90137V3.53837C18.7629 4.64437 19.6739 5.55437 20.7799 5.55437C21.4769 5.56237 22.4449 5.56437 23.2669 5.56237C23.6879 5.56137 23.9019 5.05837 23.6099 4.75437C22.5549 3.65737 20.6659 1.69137 19.5839 0.56737Z" fill="#1B1393"/>
+                        <path d="M17.3088 11.021C16.8573 11.021 16.2592 11.011 15.5146 11.011C13.6987 11.011 12.2055 9.508 12.2055 7.675V4.459C12.2055 4.206 12.0036 4 11.753 4H6.46363C3.99517 4 2 6.026 2 8.509V19.284C2 21.889 4.09022 24 6.66958 24H14.5463C17.0058 24 19 21.987 19 19.502V11.471C19 11.217 18.799 11.012 18.5475 11.013C18.1247 11.016 17.6177 11.021 17.3088 11.021Z" fill="#1B1393"/>
+                        <path d="M14.5839 4.56737C14.2849 4.25637 13.7629 4.47037 13.7629 4.90137V7.53837C13.7629 8.64437 14.6739 9.55437 15.7799 9.55437C16.4769 9.56237 17.4449 9.56437 18.2669 9.56237C18.6879 9.56137 18.9019 9.05837 18.6099 8.75437C17.5549 7.65737 15.6659 5.69137 14.5839 4.56737Z" fill="#1B1393"/>
+                    </svg>
+                </div>
+                    <p class="button-close">
+                        Сохраните секретный ключ в надежном месте для возможности восстановления доступа к аккаунту.
+                    </p>
+                </div>
+            </div>
+            <div class="select-wrapper">
+                <p class="select_title"> Код подтверждения </p>
+                <input class="input" type="text" placeholder="6-ти значный числовой пароль">
+            </div>
+            <button type="button" class="button"> Отправить </button>
+            </div>
+
+        </div>
+
+    </div>
+</article>
+
+<script>
+    $('.slct').click(function(){
+        var dropBlock = $(this).parent().find('.drop');
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function(){
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+
+    $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
+
+    $(".toggle-password-second").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>

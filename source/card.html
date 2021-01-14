@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+//= templates_html/header.html
+<article>
+    //= templates_html/nav.html
+    <div class="page-container main-container">
+        <div class="top-source">
+            <a href="index.html">
+                <button type="button" class="button">Назад</button>
+            </a>
+            <div class="source">
+                <p>Источник</p>
+                <div class="select">
+                    <a href="javascript:void(0);" class="slct" style="background-image: url(images/Arrow.png);"><span>AB Tests </span></a>
+                    <ul class="drop">
+                        <li><a href=""><span>Test 1</span></a></li>
+                        <li><a href=""><span>Test 2</span></a></li>
+                    </ul>
+                    <input type="hidden" id="select"/>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tabs-wrapper">
+            <div class="tab active-tab">
+                <p>Общая</p>
+                <div class="line"></div>
+            </div>
+            <div class="tab">
+                <p>Аналитика</p>
+                <div class="line"></div>
+            </div>
+            <div class="tab">
+                <p>Лендинги</p>
+                <div class="line"></div>
+            </div>
+            <div class="tab">
+                <p>Баннеры</p>
+                <div class="line"></div>
+            </div>
+            <div class="tab">
+                <p>CMS модули</p>
+                <div class="line"></div>
+            </div>
+            </div>
+        </div>
+        <div class="big-card tab-item">
+            <div class="big-card__title">
+                <div class="cards__item">
+                    <div class="logo">
+                        <img class="logo__img" src="images/warship.png">
+                        <button type="button" class="button-clicked">Подключено</button>
+                    </div>
+                    <div class='cards-container'>
+                        <div class="title">
+                            <div class="wrapper">
+                                <h1> Yandex Browser (app) </h1>
+                                <p> google.com/store/apps/details?id=com.yandex.browser </p>
+                            </div>
+                            <div class="rate">
+                                <div class="rate_stars">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0L15.8794 6.66049L23.4127 8.2918L18.277 14.0395L19.0534 21.7082L12 18.6L4.94658 21.7082L5.72303 14.0395L0.587322 8.2918L8.12062 6.66049L12 0Z"
+                                              fill="#E8E7F4"/>
+                                    </svg>
+                                    <svg class='active' width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0L15.8794 6.66049L23.4127 8.2918L18.277 14.0395L19.0534 21.7082L12 18.6L4.94658 21.7082L5.72303 14.0395L0.587322 8.2918L8.12062 6.66049L12 0Z"
+                                              fill="#E8E7F4"/>
+                                    </svg>
+                                    <svg class='active' width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0L15.8794 6.66049L23.4127 8.2918L18.277 14.0395L19.0534 21.7082L12 18.6L4.94658 21.7082L5.72303 14.0395L0.587322 8.2918L8.12062 6.66049L12 0Z"
+                                              fill="#E8E7F4"/>
+                                    </svg>
+                                    <svg class='active' width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0L15.8794 6.66049L23.4127 8.2918L18.277 14.0395L19.0534 21.7082L12 18.6L4.94658 21.7082L5.72303 14.0395L0.587322 8.2918L8.12062 6.66049L12 0Z"
+                                              fill="#E8E7F4"/>
+                                    </svg>
+                                    <svg class='active' width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0L15.8794 6.66049L23.4127 8.2918L18.277 14.0395L19.0534 21.7082L12 18.6L4.94658 21.7082L5.72303 14.0395L0.587322 8.2918L8.12062 6.66049L12 0Z"
+                                              fill="#E8E7F4"/>
+                                    </svg>
+                                </div>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                          d="M16.34 1.99976H7.67C4.28 1.99976 2 4.37976 2 7.91976V16.0898C2 19.6198 4.28 21.9998 7.67 21.9998H16.34C19.73 21.9998 22 19.6198 22 16.0898V7.91976C22 4.37976 19.73 1.99976 16.34 1.99976Z"
+                                          fill="#1B1393"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M11.1246 8.18933C11.1246 8.67133 11.5156 9.06433 11.9946 9.06433C12.4876 9.06433 12.8796 8.67133 12.8796 8.18933C12.8796 7.70733 12.4876 7.31433 12.0046 7.31433C11.5196 7.31433 11.1246 7.70733 11.1246 8.18933ZM12.8696 11.3621C12.8696 10.8801 12.4766 10.4871 11.9946 10.4871C11.5126 10.4871 11.1196 10.8801 11.1196 11.3621V15.7821C11.1196 16.2641 11.5126 16.6571 11.9946 16.6571C12.4766 16.6571 12.8696 16.2641 12.8696 15.7821V11.3621Z"
+                                          fill="#1B1393"/>
+                                </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row__top">
+                                <div class="wrapper">
+                                    <div class="item item-margin">
+                                        <span class="table_title">Код</span>
+                                        <span class="table_subtitle">Категория</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="table_title">yabrowser_app</span>
+                                        <span class="table_subtitle">Приложения</span>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="item item-margin">
+                                        <span class="table_title">Модель</span>
+                                        <span class="table_subtitle">CPA</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="table_title item-margin">Платформа</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.401 1.74531L9.68017 8.62522C7.58613 7.7495 4.78854 7.3667 2.30908 8.13405C2.81074 5.92989 4.03081 1.74531 4.03081 1.74531C5.85392 0.252562 9.4005 0.788307 11.401 1.74531Z"
+                                                  fill="#1B1393"/>
+                                            <path d="M12.3966 2.74866C14.273 3.84724 17.5906 4.18634 20.0001 3.46706L18.0328 10.0996C16.0113 11.1694 12.1466 11.0899 10.6626 9.6076L12.3966 2.74866Z"
+                                                  fill="#1B1393"/>
+                                            <path d="M9.08757 10.062L7.36847 16.9402C5.20276 15.9439 2.44188 15.2779 0 16.4482C0 16.4482 1.13354 12.018 1.71823 9.81645C3.61038 8.64271 7.37983 8.98967 9.08757 10.062Z"
+                                                  fill="#1B1393"/>
+                                            <path d="M10.2657 11.0479C12.1421 12.3745 15.3312 12.5895 17.6883 11.6771L15.7245 18.3123C13.8227 19.6049 10.1022 19.4065 8.35254 18.0667L10.2657 11.0479Z"
+                                                  fill="#1B1393"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item">
+                                        <span class="table_title item-margin">eCPC</span>
+                                        <span class="table_subtitle">0.00 $</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="table_title">CR</span>
+                                        <span class="table_subtitle">n/a</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="big-card__description">
+                <h2 class="title-style">Описание</h2>
+                <p class="text-style">Яндекс.Браузер — с Алисой и блокировкой шокирующей, непристойной или опасной
+                    рекламы.</p>
+            </div>
+            <div class="big-card__description">
+                <h2 class="title-style">Правила программы</h2>
+                <p class="text-style">Рекламные материалы необходимо согласовывать. За любой несогласованный креатив Вы
+                    будете моментально отключены и все Ваши выплаты будут заблокированы.</p>
+            </div>
+            <div class="big-card__tables">
+                <div class="rate_table">
+                    <h2 class="title-style">Полная таблица тарифов</h2>
+                    <div class="card__bottom">
+                        <div class="wrapper">
+                            <span class="table_title col-card ">Цель</span>
+                            <span class="table_title col-card">Выплаты</span>
+                            <span class="table_title col-card ">Холд</span>
+                            <span class="table_title col-card ">Тип</span>
+                            <span class="table_title col-card">Подтверждение</span>
+                        </div>
+                        <div class='table_line'></div>
+
+                        <div class="wrapper">
+                            <span class="table_subtitle col-card ">Подписка</span>
+                            <span class="table_subtitle col-card">1$</span>
+                            <span class="table_subtitle col-card ">30 дней</span>
+                            <span class="table_subtitle col-card table_subtitle_active">За действие</span>
+                            <span class="table_subtitle col-1">100%</span>
+                        </div>
+                        <div class="wrapper">
+                            <span class="table_subtitle col-card ">Клик</span>
+                            <span class="table_subtitle col-card">1$</span>
+                            <span class="table_subtitle col-card">30 дней</span>
+                            <span class="table_subtitle col-card table_subtitle_active">За действие</span>
+                            <span class="table_subtitle col-1">100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="types_table">
+                    <h2 class="title-style">Типы трафика</h2>
+                    <div class="wrapper">
+                        <p class="text-style"> Вебсайт </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M16.3402 1.99976H7.67024C4.28024 1.99976 2.00024 4.37976 2.00024 7.91976V16.0898C2.00024 19.6198 4.28024 21.9998 7.67024 21.9998H16.3402C19.7302 21.9998 22.0002 19.6198 22.0002 16.0898V7.91976C22.0002 4.37976 19.7302 1.99976 16.3402 1.99976Z"
+                                  fill="#81CB00"/>
+                            <path d="M10.8134 15.2478C10.5894 15.2478 10.3654 15.1628 10.1944 14.9918L7.82144 12.6188C7.47944 12.2768 7.47944 11.7228 7.82144 11.3818C8.16344 11.0398 8.71644 11.0388 9.05844 11.3808L10.8134 13.1358L14.9414 9.00784C15.2834 8.66584 15.8364 8.66584 16.1784 9.00784C16.5204 9.34984 16.5204 9.90384 16.1784 10.2458L11.4324 14.9918C11.2614 15.1628 11.0374 15.2478 10.8134 15.2478Z"
+                                  fill="#81CB00"/>
+                        </svg>
+                    </div>
+                    <div class="wrapper">
+                        <p class="text-style"> Тизерные сети </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M16.3402 1.99976H7.67024C4.28024 1.99976 2.00024 4.37976 2.00024 7.91976V16.0898C2.00024 19.6198 4.28024 21.9998 7.67024 21.9998H16.3402C19.7302 21.9998 22.0002 19.6198 22.0002 16.0898V7.91976C22.0002 4.37976 19.7302 1.99976 16.3402 1.99976Z"
+                                  fill="#81CB00"/>
+                            <path d="M10.8134 15.2478C10.5894 15.2478 10.3654 15.1628 10.1944 14.9918L7.82144 12.6188C7.47944 12.2768 7.47944 11.7228 7.82144 11.3818C8.16344 11.0398 8.71644 11.0388 9.05844 11.3808L10.8134 13.1358L14.9414 9.00784C15.2834 8.66584 15.8364 8.66584 16.1784 9.00784C16.5204 9.34984 16.5204 9.90384 16.1784 10.2458L11.4324 14.9918C11.2614 15.1628 11.0374 15.2478 10.8134 15.2478Z"
+                                  fill="#81CB00"/>
+                        </svg>
+                    </div>
+                    <div class="wrapper">
+                        <p class="text-style"> Группы/сообщества в соцсетях </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M16.34 1.99976H7.67C4.28 1.99976 2 4.37976 2 7.91976V16.0898C2 19.6198 4.28 21.9998 7.67 21.9998H16.34C19.73 21.9998 22 19.6198 22 16.0898V7.91976C22 4.37976 19.73 1.99976 16.34 1.99976Z"
+                                  fill="#DD1F2C"/>
+                            <path d="M15.0156 13.7703L13.2366 11.9923L15.0146 10.2143C15.3566 9.87326 15.3566 9.31826 15.0146 8.97726C14.6726 8.63326 14.1196 8.63426 13.7776 8.97626L11.9986 10.7543L10.2196 8.97426C9.87758 8.63226 9.32358 8.63426 8.98158 8.97426C8.64058 9.31626 8.64058 9.87126 8.98158 10.2123L10.7616 11.9923L8.98558 13.7673C8.64358 14.1093 8.64358 14.6643 8.98558 15.0043C9.15658 15.1763 9.37958 15.2613 9.60358 15.2613C9.82858 15.2613 10.0516 15.1763 10.2226 15.0053L11.9986 13.2293L13.7786 15.0083C13.9496 15.1793 14.1726 15.2643 14.3966 15.2643C14.6206 15.2643 14.8446 15.1783 15.0156 15.0083C15.3576 14.6663 15.3576 14.1123 15.0156 13.7703Z"
+                                  fill="#DD1F2C"/>
+                        </svg>
+
+                    </div>
+                    <div class="wrapper">
+                        <p class="text-style"> Таргетированная реклама в соцсетях </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M16.34 1.99976H7.67C4.28 1.99976 2 4.37976 2 7.91976V16.0898C2 19.6198 4.28 21.9998 7.67 21.9998H16.34C19.73 21.9998 22 19.6198 22 16.0898V7.91976C22 4.37976 19.73 1.99976 16.34 1.99976Z"
+                                  fill="#DD1F2C"/>
+                            <path d="M15.0156 13.7703L13.2366 11.9923L15.0146 10.2143C15.3566 9.87326 15.3566 9.31826 15.0146 8.97726C14.6726 8.63326 14.1196 8.63426 13.7776 8.97626L11.9986 10.7543L10.2196 8.97426C9.87758 8.63226 9.32358 8.63426 8.98158 8.97426C8.64058 9.31626 8.64058 9.87126 8.98158 10.2123L10.7616 11.9923L8.98558 13.7673C8.64358 14.1093 8.64358 14.6643 8.98558 15.0043C9.15658 15.1763 9.37958 15.2613 9.60358 15.2613C9.82858 15.2613 10.0516 15.1763 10.2226 15.0053L11.9986 13.2293L13.7786 15.0083C13.9496 15.1793 14.1726 15.2643 14.3966 15.2643C14.6206 15.2643 14.8446 15.1783 15.0156 15.0083C15.3576 14.6663 15.3576 14.1123 15.0156 13.7703Z"
+                                  fill="#DD1F2C"/>
+                        </svg>
+
+                    </div>
+                    <div class="wrapper">
+                        <p class="text-style"> Приложения/игры в соцсетях </p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M16.3402 1.99976H7.67024C4.28024 1.99976 2.00024 4.37976 2.00024 7.91976V16.0898C2.00024 19.6198 4.28024 21.9998 7.67024 21.9998H16.3402C19.7302 21.9998 22.0002 19.6198 22.0002 16.0898V7.91976C22.0002 4.37976 19.7302 1.99976 16.3402 1.99976Z"
+                                  fill="#81CB00"/>
+                            <path d="M10.8134 15.2478C10.5894 15.2478 10.3654 15.1628 10.1944 14.9918L7.82144 12.6188C7.47944 12.2768 7.47944 11.7228 7.82144 11.3818C8.16344 11.0398 8.71644 11.0388 9.05844 11.3808L10.8134 13.1358L14.9414 9.00784C15.2834 8.66584 15.8364 8.66584 16.1784 9.00784C16.5204 9.34984 16.5204 9.90384 16.1784 10.2458L11.4324 14.9918C11.2614 15.1628 11.0374 15.2478 10.8134 15.2478Z"
+                                  fill="#81CB00"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="big-card__target">
+                <h2 class="title-style">Таргетинг</h2>
+                <div class="card__bottom">
+                    <div class="wrapper">
+                        <span class="table_title col-7 ">Страны</span>
+                        <div class="width-wrapper">
+                            <span class="table_title col-8">Устройства</span>
+                            <span class="table_title col-9 ">Платформа</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <span class="table_subtitle col-7 ">Россия, США, Куба, Китай, Казахстан</span>
+                        <div class="width-wrapper">
+                            <span class="table_subtitle col-8">Мобильный</span>
+                            <div class="col-9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.849 0C13.8956 0 13.9421 0 13.9913 0C14.1055 1.41044 13.5671 2.46432 12.9128 3.22751C12.2708 3.98542 11.3917 4.7205 9.96985 4.60897C9.875 3.21872 10.4142 2.24301 11.0676 1.48158C11.6736 0.771967 12.7846 0.140517 13.849 0Z"
+                                          fill="#1B1393"/>
+                                    <path d="M18.1532 14.6805C18.1532 14.6946 18.1532 14.7069 18.1532 14.7201C17.7536 15.9303 17.1836 16.9675 16.488 17.93C15.8531 18.8038 15.075 19.9798 13.6856 19.9798C12.4851 19.9798 11.6876 19.2078 10.4572 19.1868C9.15568 19.1657 8.43992 19.8323 7.24991 20C7.11379 20 6.97766 20 6.84417 20C5.97033 19.8735 5.2651 19.1815 4.75134 18.5579C3.23639 16.7154 2.0657 14.3354 1.8479 11.2897C1.8479 10.9911 1.8479 10.6934 1.8479 10.3948C1.94011 8.21499 2.99926 6.44272 4.40707 5.58381C5.15006 5.12712 6.17144 4.73807 7.30875 4.91196C7.79617 4.98749 8.29413 5.15435 8.73061 5.31946C9.14426 5.47842 9.66154 5.76033 10.1516 5.7454C10.4836 5.73574 10.8138 5.56273 11.1484 5.44065C12.1285 5.08673 13.0893 4.68098 14.3557 4.87156C15.8777 5.10166 16.9579 5.7779 17.6254 6.82124C16.3379 7.64063 15.32 8.87542 15.4939 10.9841C15.6485 12.8995 16.7621 14.0201 18.1532 14.6805Z"
+                                          fill="#1B1393"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M2.77613 6.47833C2.43164 6.47833 2.13892 6.59844 1.89862 6.83895C1.65832 7.07938 1.53809 7.3678 1.53809 7.7043V12.8729C1.53809 13.2172 1.65828 13.5097 1.89862 13.7501C2.13892 13.9906 2.43147 14.1105 2.77601 14.1105C3.12063 14.1105 3.41107 13.9905 3.64741 13.7501C3.88392 13.5097 4.0021 13.2172 4.0021 12.8729V7.7043C4.0021 7.36767 3.88182 7.07925 3.64152 6.83895C3.40118 6.59857 3.11259 6.47833 2.77613 6.47833Z"
+                                              fill="#1B1393"/>
+                                        <path d="M4.48315 14.7118C4.48315 15.0803 4.61139 15.3928 4.86777 15.6493C5.1242 15.9055 5.43661 16.0336 5.80531 16.0336H6.69478L6.70691 18.7621C6.70691 19.1067 6.8271 19.399 7.06744 19.6395C7.30774 19.8799 7.59629 20 7.93279 20C8.27749 20 8.56987 19.8799 8.8103 19.6395C9.05072 19.399 9.17083 19.1067 9.17083 18.7621V16.0336H10.8294V18.7621C10.8294 19.1067 10.9496 19.399 11.1899 19.6395C11.4305 19.8799 11.7229 20 12.0675 20C12.4119 20 12.7043 19.8799 12.9446 19.6395C13.1849 19.399 13.305 19.1067 13.305 18.7621V16.0336H14.2065C14.5669 16.0336 14.8755 15.9057 15.1319 15.6493C15.3883 15.3928 15.5166 15.0803 15.5166 14.7118V6.70673H4.48315V14.7118Z"
+                                              fill="#1B1393"/>
+                                        <path d="M12.7282 1.83893L13.5814 0.264305C13.6376 0.160152 13.6174 0.0800377 13.5214 0.024004C13.4171 -0.0241151 13.337 -7.66229e-05 13.2811 0.0961616L12.4156 1.68266C11.6543 1.34612 10.8493 1.17785 9.99975 1.17785C9.15045 1.17785 8.34509 1.34612 7.58382 1.68266L6.71843 0.0962037C6.66252 -3.4527e-05 6.58228 -0.024073 6.47813 0.0240461C6.38193 0.0800798 6.36202 0.160194 6.4181 0.264347L7.27148 1.83893C6.40597 2.27958 5.71706 2.89461 5.20409 3.68388C4.69128 4.47319 4.43481 5.33664 4.43481 6.27402H15.5529C15.5529 5.33664 15.2965 4.47315 14.7837 3.68388C14.2706 2.89461 13.5859 2.27954 12.7282 1.83893ZM7.79419 4.12853C7.70212 4.22072 7.59198 4.26678 7.46375 4.26678C7.33552 4.26678 7.22741 4.22077 7.13917 4.12853C7.05114 4.03646 7.00698 3.92624 7.00698 3.79805C7.00698 3.66982 7.05114 3.5596 7.13917 3.46741C7.22728 3.37521 7.33556 3.32924 7.46375 3.32924C7.59182 3.32924 7.70199 3.37517 7.79419 3.46741C7.88638 3.5596 7.93244 3.66982 7.93244 3.79805C7.93244 3.92628 7.88638 4.03633 7.79419 4.12853ZM12.8606 4.12853C12.7723 4.22072 12.6641 4.26678 12.5359 4.26678C12.4076 4.26678 12.2977 4.22077 12.2055 4.12853C12.1133 4.03646 12.0674 3.92624 12.0674 3.79805C12.0674 3.66982 12.1133 3.5596 12.2055 3.46741C12.2977 3.37521 12.4076 3.32924 12.5359 3.32924C12.6641 3.32924 12.7723 3.37517 12.8606 3.46741C12.9485 3.5596 12.9927 3.66982 12.9927 3.79805C12.9927 3.92628 12.9486 4.03633 12.8606 4.12853Z"
+                                              fill="#1B1393"/>
+                                        <path d="M18.1008 6.83289C17.8605 6.59655 17.5681 6.47833 17.2234 6.47833C16.887 6.47833 16.5986 6.59655 16.3583 6.83289C16.1178 7.06932 15.9976 7.35984 15.9976 7.7043V12.8729C15.9976 13.2172 16.1178 13.5097 16.3583 13.7501C16.5986 13.9906 16.887 14.1105 17.2234 14.1105C17.5681 14.1105 17.8605 13.9905 18.1008 13.7501C18.3414 13.5097 18.4615 13.2172 18.4615 12.8729V7.7043C18.4615 7.3598 18.3414 7.06928 18.1008 6.83289Z"
+                                              fill="#1B1393"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-item"></div>
+        <div style="display: none" class="landing_table tab-item">
+            <div class="landing_table__top">
+                <div class="empty-div"></div>
+                <p class="col-10 table_title">Создан</p>
+                <p class="col-11 table_title">Название</p>
+                <p class="col-12 table_title">URL лендинга</p>
+                <p class="col-13 table_title">CR</p>
+                <p class="col-13 table_title">eCPC</p>
+                <p class="col-14 table_title">Действие</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <p class="col-15 table_subtitle">8</p>
+                    <p class="col-10 table_subtitle">6.10.2019</p>
+                    <p class="col-11 table_subtitle">Google Play (2)</p>
+                    <p class="col-12 table_subtitle blue-title">/store/apps/details?id=com.yandex.browser</p>
+                    <p class="col-13 table_subtitle">n/a</p>
+                    <p class="col-13 table_subtitle">0.00 $</p>
+                    <div class="col-14">
+                        <p class="table_subtitle js-get-code">Получить код</p>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M12.5 2.49988C18.015 2.49988 22.5 6.98588 22.5 12.4999C22.5 18.0139 18.015 22.4999 12.5 22.4999C6.986 22.4999 2.5 18.0139 2.5 12.4999C2.5 6.98588 6.986 2.49988 12.5 2.49988"
+                                  fill="#1B1393"/>
+                            <path d="M11.0575 8.27917C11.2485 8.27917 11.4405 8.35217 11.5865 8.49817L15.0735 11.9682C15.2145 12.1092 15.2935 12.3002 15.2935 12.5002C15.2935 12.6992 15.2145 12.8902 15.0735 13.0312L11.5865 16.5032C11.2935 16.7952 10.8195 16.7952 10.5265 16.5012C10.2345 16.2072 10.2355 15.7322 10.5285 15.4402L13.4815 12.5002L10.5285 9.56017C10.2355 9.26817 10.2345 8.79417 10.5265 8.50017C10.6725 8.35217 10.8655 8.27917 11.0575 8.27917"
+                                  fill="#1B1393"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row">
+                    <p class="col-15 table_subtitle">8</p>
+                    <p class="col-10 table_subtitle">6.10.2019</p>
+                    <p class="col-11 table_subtitle">Google Play (2)</p>
+                    <p class="col-12 table_subtitle  blue-title">/store/apps/details?id=com.yandex.browser</p>
+                    <p class="col-13 table_subtitle">n/a</p>
+                    <p class="col-13 table_subtitle">0.00 $</p>
+                    <div class="col-14">
+                        <p class="table_subtitle">Получить код</p>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                  d="M12.5 2.49988C18.015 2.49988 22.5 6.98588 22.5 12.4999C22.5 18.0139 18.015 22.4999 12.5 22.4999C6.986 22.4999 2.5 18.0139 2.5 12.4999C2.5 6.98588 6.986 2.49988 12.5 2.49988"
+                                  fill="#1B1393"/>
+                            <path d="M11.0575 8.27917C11.2485 8.27917 11.4405 8.35217 11.5865 8.49817L15.0735 11.9682C15.2145 12.1092 15.2935 12.3002 15.2935 12.5002C15.2935 12.6992 15.2145 12.8902 15.0735 13.0312L11.5865 16.5032C11.2935 16.7952 10.8195 16.7952 10.5265 16.5012C10.2345 16.2072 10.2355 15.7322 10.5285 15.4402L13.4815 12.5002L10.5285 9.56017C10.2355 9.26817 10.2345 8.79417 10.5265 8.50017C10.6725 8.35217 10.8655 8.27917 11.0575 8.27917"
+                                  fill="#1B1393"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-item"></div>
+        <div class="tab-item"></div>
+    </div>
+
+</article>
+<div class="modal_get-code">
+    <div class="container">
+        <div class="title"><p> Получить код </p></div>
+        <div class="tabs">
+            <div class="tab-code active-code-tab">
+                <p>Прямая ссылка</p>
+                <div class="line"></div>
+            </div>
+            <div class="tab-code active-code-tab">
+                <p>Скрипты</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="tab-code-item">
+            <div class="table">
+                <input class="input" type="text" placeholder="Логин" style="background-image: url(images/Paper.png);">
+                <div class="row-center">
+                    <input class="input" type="text" placeholder="Subll">
+                    <input class="input" type="text" placeholder="Subll">
+                    <input class="input" type="text" placeholder="Subll">
+                    <input class="input" type="text" placeholder="Subll">
+                    <input class="input" type="text" placeholder="Subll">
+                </div>
+                <div class="row-bottom">
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите макрос </span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите макрос </span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-code-item"></div>
+        <button class="button"> Сгенерировать код</button>
+        <p class="button-close"> Закрыть </p>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.js-get-code').addEventListener("click", (e) => {
+        e.stopPropagation()
+        document.body.classList.toggle('active-body');
+        document.querySelector(".modal_get-code").classList.toggle('active-modal')
+    })
+    document.querySelector(".modal_get-code").addEventListener("click", (e) => {
+        e.stopPropagation()
+    })
+    document.querySelector(".button-close").addEventListener("click", (e) => {
+        e.stopPropagation()
+        document.body.classList.remove('active-body');
+        document.querySelector(".modal_get-code").classList.remove('active-modal')
+    })
+    document.body.addEventListener("click", () => {
+        document.querySelector(".modal_get-code").classList.remove('active-modal')
+        document.body.classList.remove('active-body');
+    })
+    const tabsCode = document.querySelectorAll('.tab-code')
+    const tabCodeItems = document.querySelectorAll('.tab-code-item')
+            tabsCode.forEach((item, i) => {
+                item.onclick = () => {
+                    tabsCode.forEach((item) => {
+                        if (item.classList.contains('active-code-tab')) {
+                            item.classList.remove('active-code-tab')
+                        }
+                    })
+                    tabCodeItems.forEach((item) => item.style.display = 'none')
+
+                    tabCodeItems[i].style.display = 'block'
+        }
+    })
+
+    const tabs = document.querySelectorAll('.tab')
+    const tabItems = document.querySelectorAll('.tab-item')
+    tabs.forEach((item, i) => {
+        item.onclick = () => {
+            tabs.forEach((item) => {
+                if (item.classList.contains('active-tab')) {
+                    item.classList.remove('active-tab')
+                }
+            })
+            tabItems.forEach((item) => item.style.display = 'none')
+
+            item.classList.toggle('active-tab')
+            tabItems[i].style.display = 'block'
+        }
+    })
+
+    $('.slct').click(function () {
+        var dropBlock = $(this).parent().find('.drop');
+        if (dropBlock.is(':hidden')) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function () {
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+</script>

@@ -1,0 +1,134 @@
+@import "templates_style/nav";
+@import "templates_style/header";
+@import "global/common";
+
+.profile-contacts {
+  flex-direction: column;
+  .title {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: $color-dark-blue;
+    margin-bottom: 32px;
+  }
+  .blue-title  {
+    span {
+      opacity: 1;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    &::placeholder {
+      opacity: 1;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    }
+  .first-table {
+    width: 100%;
+    max-width: 1515px;
+    margin-bottom: 32px;
+    height: 112px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .select-wrapper {
+        width: 32%;
+        .input {
+          width: 100%;
+          height: 56px;
+          padding: 16px;
+        }
+        .select {
+          .slct {
+            height: 56px;
+          }
+        }
+        .wrapper {
+          align-items: center;
+          height: 56px;
+          display: flex;
+
+        }
+      }
+    }
+  }
+  .second-table {
+    width: 100%;
+    max-width: 1515px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    .table-title {
+      margin-bottom: 32px;
+      width: 245px;
+      .select {
+        .slct {
+          height: 40px;
+        }
+      }
+    }
+    .row {
+      width: 100%;
+      display: flex;
+      .select-wrapper {
+        margin-right: 16px;
+        width: 32%;
+        .input {
+          width: 100%;
+          height: 56px;
+          padding: 16px;
+          background-position: 98% !important;
+        }
+        .select {
+          .slct {
+            height: 56px;
+          }
+        }
+        .wrapper {
+          align-items: center;
+          height: 56px;
+          display: flex;
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-contacts {
+
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-contacts {
+
+    .first-table {
+      height: unset;
+    }
+
+    .row {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    .select-wrapper {
+      width: 100% !important;
+      margin-bottom: 16px;
+    }
+  }
+}

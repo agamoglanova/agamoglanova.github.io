@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/my-sources.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
+</head>
+
+<body>
+//= templates_html/header.html
+<article>
+    //= templates_html/nav.html
+    <div class="page-container sources-container">
+        <div class="item">
+            <div class="item__top">
+                <p class="table_subtitle">Мои источники трафика</p>
+                <button class="button js-add-source">Добавить</button>
+            </div>
+            <div class="block">
+            <div class="item__table">
+                <div class="item__table__top">
+                    <p class="col-22 table_title">Название</p>
+                    <p class="col-23 table_title">Тип</p>
+                    <p class="col-24 table_title">Страны</p>
+                    <p class="col-25 table_title">Статус</p>
+                </div>
+                <div class="item__table__container">
+                    <div class="row">
+                        <p class="col-21 table_subtitle">332</p>
+                        <p class="col-22 table_subtitle">Ab Tests</p>
+                        <p class="col-23 table_subtitle">Арбитражная система</p>
+                        <p class="col-24 table_subtitle">AT, AX, AL, AD, BE, BG, BA, VA, GB, HU, DE, GG, GI, GL, GR, DK, JE, IE, IS, ES, IT, CY, XK, LV, LT, LI, LU, MK, MT, MC, IM, NL, NO, PL, PT, RO, SM, SJ, RS, SK, SI, TR, FO, FI, FR, HR, ME, CZ, CH, SE, EE, AZ, AM, BY, KZ, KG, MD, RU, TJ, TM, UZ, UA</p>
+                        <div class="col-25">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="active" cx="8.5" cy="8.50012" r="8" fill="#DD1F2C"/>
+                            </svg>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M20.4927 19.4534H14.7984C14.2429 19.4534 13.791 19.9124 13.791 20.4767C13.791 21.0422 14.2429 21.5001 14.7984 21.5001H20.4927C21.0483 21.5001 21.5001 21.0422 21.5001 20.4767C21.5001 19.9124 21.0483 19.4534 20.4927 19.4534Z" fill="#1B1393"/>
+                                <path d="M10.809 7.40397L16.2049 11.7641C16.335 11.8683 16.3573 12.0597 16.2557 12.193L9.85874 20.5283C9.45662 21.0432 8.86402 21.3345 8.22908 21.3453L4.73696 21.3883C4.55071 21.3904 4.38775 21.2614 4.34542 21.0766L3.55175 17.6259C3.41419 16.9917 3.55175 16.3359 3.95388 15.8307L10.3826 7.45557C10.4863 7.3212 10.6778 7.29755 10.809 7.40397Z" fill="#1B1393"/>
+                                <path opacity="0.4" d="M18.6208 9.16556L17.5806 10.4641C17.4758 10.5963 17.2874 10.6178 17.1573 10.5125C15.8927 9.48913 12.6545 6.86297 11.7561 6.13521C11.6249 6.02771 11.6069 5.83637 11.7127 5.70307L12.7159 4.45718C13.626 3.28546 15.2133 3.17796 16.4938 4.19919L17.9647 5.37091C18.5679 5.84389 18.97 6.46738 19.1076 7.12311C19.2663 7.84442 19.097 8.55283 18.6208 9.16556Z" fill="#1B1393"/>
+                            </svg>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M20.1435 9.98857C20.1435 10.0566 19.6105 16.7973 19.3061 19.6342C19.1155 21.3752 17.9932 22.4311 16.3097 22.4611C15.0162 22.4901 13.7499 22.5001 12.5041 22.5001C11.1814 22.5001 9.8879 22.4901 8.63233 22.4611C7.00525 22.4221 5.88196 21.3452 5.70106 19.6342C5.3879 16.7873 4.86467 10.0566 4.85494 9.98857C4.84522 9.78357 4.91135 9.58858 5.04556 9.43059C5.17783 9.28459 5.36845 9.19659 5.56879 9.19659H19.4393C19.6387 9.19659 19.8196 9.28459 19.9626 9.43059C20.0958 9.58858 20.1629 9.78357 20.1435 9.98857Z" fill="#1B1393"/>
+                                <path d="M21.5 6.47698C21.5 6.066 21.1761 5.74401 20.7871 5.74401H17.8714C17.2781 5.74401 16.7627 5.32202 16.6304 4.72704L16.467 3.99807C16.2385 3.1171 15.4498 2.50012 14.5647 2.50012H10.4362C9.5415 2.50012 8.76054 3.1171 8.52323 4.04607L8.37054 4.72804C8.2373 5.32202 7.72185 5.74401 7.12957 5.74401H4.21385C3.82386 5.74401 3.5 6.066 3.5 6.47698V6.85697C3.5 7.25796 3.82386 7.58994 4.21385 7.58994H20.7871C21.1761 7.58994 21.5 7.25796 21.5 6.85697V6.47698Z" fill="#1B1393"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="row">
+                        <p class="col-21 table_subtitle">332</p>
+                        <p class="col-22 table_subtitle">Ab Tests</p>
+                        <p class="col-23 table_subtitle">Арбитражная система</p>
+                        <p class="col-24 table_subtitle">AT, AX, AL, AD, BE, BG, BA, VA, GB, HU, DE, GG, GI, GL, GR, DK, JE, IE, IS, ES, IT, CY, XK, LV, LT, LI, LU, MK, MT, MC, IM, NL, NO, PL, PT, RO, SM, SJ, RS, SK, SI, TR, FO, FI, FR, HR, ME, CZ, CH, SE, EE, AZ, AM, BY, KZ, KG, MD, RU, TJ, TM, UZ, UA</p>
+                        <div class="col-25">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle  cx="8.5" cy="8.50012" r="8" fill="#DD1F2C"/>
+                            </svg>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M20.4927 19.4534H14.7984C14.2429 19.4534 13.791 19.9124 13.791 20.4767C13.791 21.0422 14.2429 21.5001 14.7984 21.5001H20.4927C21.0483 21.5001 21.5001 21.0422 21.5001 20.4767C21.5001 19.9124 21.0483 19.4534 20.4927 19.4534Z" fill="#1B1393"/>
+                                <path d="M10.809 7.40397L16.2049 11.7641C16.335 11.8683 16.3573 12.0597 16.2557 12.193L9.85874 20.5283C9.45662 21.0432 8.86402 21.3345 8.22908 21.3453L4.73696 21.3883C4.55071 21.3904 4.38775 21.2614 4.34542 21.0766L3.55175 17.6259C3.41419 16.9917 3.55175 16.3359 3.95388 15.8307L10.3826 7.45557C10.4863 7.3212 10.6778 7.29755 10.809 7.40397Z" fill="#1B1393"/>
+                                <path opacity="0.4" d="M18.6208 9.16556L17.5806 10.4641C17.4758 10.5963 17.2874 10.6178 17.1573 10.5125C15.8927 9.48913 12.6545 6.86297 11.7561 6.13521C11.6249 6.02771 11.6069 5.83637 11.7127 5.70307L12.7159 4.45718C13.626 3.28546 15.2133 3.17796 16.4938 4.19919L17.9647 5.37091C18.5679 5.84389 18.97 6.46738 19.1076 7.12311C19.2663 7.84442 19.097 8.55283 18.6208 9.16556Z" fill="#1B1393"/>
+                            </svg>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M20.1435 9.98857C20.1435 10.0566 19.6105 16.7973 19.3061 19.6342C19.1155 21.3752 17.9932 22.4311 16.3097 22.4611C15.0162 22.4901 13.7499 22.5001 12.5041 22.5001C11.1814 22.5001 9.8879 22.4901 8.63233 22.4611C7.00525 22.4221 5.88196 21.3452 5.70106 19.6342C5.3879 16.7873 4.86467 10.0566 4.85494 9.98857C4.84522 9.78357 4.91135 9.58858 5.04556 9.43059C5.17783 9.28459 5.36845 9.19659 5.56879 9.19659H19.4393C19.6387 9.19659 19.8196 9.28459 19.9626 9.43059C20.0958 9.58858 20.1629 9.78357 20.1435 9.98857Z" fill="#1B1393"/>
+                                <path d="M21.5 6.47698C21.5 6.066 21.1761 5.74401 20.7871 5.74401H17.8714C17.2781 5.74401 16.7627 5.32202 16.6304 4.72704L16.467 3.99807C16.2385 3.1171 15.4498 2.50012 14.5647 2.50012H10.4362C9.5415 2.50012 8.76054 3.1171 8.52323 4.04607L8.37054 4.72804C8.2373 5.32202 7.72185 5.74401 7.12957 5.74401H4.21385C3.82386 5.74401 3.5 6.066 3.5 6.47698V6.85697C3.5 7.25796 3.82386 7.58994 4.21385 7.58994H20.7871C21.1761 7.58994 21.5 7.25796 21.5 6.85697V6.47698Z" fill="#1B1393"/>
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="pagination-wrapper">
+                <p class="text-style-pagination">Показано</p>
+                <p class="text-style-pagination">1 — 100 из 0</p>
+            </div>
+            <div class="wrapper">
+                <p class="text-style-pagination">На странице</p>
+                <div class="icon">
+                    <p class="text-style-pagination">10</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.8672 7.21433L15.0865 14.0624C15.1805 14.2158 15.1715 14.4122 15.0605 14.5558C14.5594 15.2064 14.0514 15.7877 13.6244 16.1755C13.6244 16.1755 13.2824 16.5096 13.0654 16.6542C12.7693 16.8877 12.3823 17 12.0063 17C11.5843 17 11.1853 16.8769 10.8662 16.6317C10.8092 16.576 10.5582 16.364 10.3532 16.1638C9.07715 14.9954 6.96905 11.9455 6.33002 10.3414C6.22701 10.1079 6.012 9.48466 6 9.16131C6 8.84967 6.068 8.54879 6.21701 8.25962C6.42202 7.90403 6.74004 7.62561 7.11706 7.46931C7.37907 7.36869 8.16511 7.21336 8.18811 7.21336C8.74914 7.11274 9.53718 7.03751 10.4572 7.00039C10.6222 6.99355 10.7822 7.07659 10.8672 7.21433Z" fill="#1B1393"/>
+                        <path opacity="0.4" d="M13.14 7.67231C12.953 7.37044 13.192 6.99043 13.551 7.00508C14.393 7.04123 15.1351 7.10375 15.6871 7.17995C15.6991 7.19167 16.6781 7.347 17.0092 7.52577C17.6242 7.8374 18.0002 8.44895 18.0002 9.1064V9.16111C17.9892 9.58509 17.6132 10.4868 17.5902 10.4868C17.4012 10.941 17.0812 11.534 16.6961 12.1719C16.5221 12.4591 16.0951 12.466 15.9181 12.1788L13.14 7.67231Z" fill="#DD1F2C"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="modal_add-source">
+    <div class="modal-container">
+        <p class="modal-title">Добавление источника</p>
+        <div class="wrapper">
+            <div class="row">
+                <div class="select">
+                    <a href="javascript:void(0);" class="slct"
+                       style="background-image: url(images/Arrow.png);"><span>Выберите тип </span></a>
+                    <ul class="drop">
+                        <li><a href=""><span>Страна 1</span></a></li>
+                        <li><a href=""><span>Страна 2</span></a></li>
+                    </ul>
+                    <input type="hidden" id="select"/>
+                </div>
+                <div class="select">
+                    <a href="javascript:void(0);" class="slct"
+                       style="background-image: url(images/Arrow.png);"><span>Основной язык аудитории </span></a>
+                    <ul class="drop">
+                        <li><a href=""><span>Страна 1</span></a></li>
+                        <li><a href=""><span>Страна 2</span></a></li>
+                    </ul>
+                    <input type="hidden" id="select"/>
+                </div>
+            </div>
+<!--            <div class="select">-->
+<!--                <a href="javascript:void(0);" class="slct"-->
+<!--                   style="background-image: url(images/Arrow.png);"><span>Основные страны </span>-->
+<!--                <div class="select-item">-->
+<!--                    <p> UA </p>-->
+<!--                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M1 1L5 5M9 9L5 5M5 5L9 1L1 9" stroke="#DD1F2C"/>-->
+<!--                    </svg>-->
+<!--                </div>-->
+<!--                </a>-->
+<!--                <ul class="drop">-->
+<!--                    <li><a href=""><span>Страна 1</span></a></li>-->
+<!--                    <li><a href=""><span>Страна 2</span></a></li>-->
+<!--                </ul>-->
+<!--                <input type="hidden" id="select"/>-->
+<!--            </div>-->
+            <div class="form-group">
+                <a href="javascript:void(0);" class="slctvvv"
+                   style="background-image: url(images/Arrow.png);"><span>Категории программ </span></a>
+                <select class="form-control select2-multi input" name="tags" multiple="multiple">
+                    <option class="select-item" value='tag1'>UA</option>
+                    <option class="select-item" value='tag2'>RU</option>
+                    <option class="select-item" value='tag3'>tag 3</option>
+                </select>
+            </div>
+            <div class="select">
+                <a href="javascript:void(0);" class="slct"
+                   style="background-image: url(images/Arrow.png);"><span>Категории стран </span></a>
+                <ul class="drop">
+                    <li><a href=""><span>Страна 1</span></a></li>
+                    <li><a href=""><span>Страна 2</span></a></li>
+                </ul>
+                <input type="hidden" id="select"/>
+            </div>
+            <textarea class="textarea input" placeholder="Введите информацию"></textarea>
+        </div>
+        <button class="button" type="button"> Добавить </button>
+        <p class="button-close"> Отмена </p>
+    </div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+<script>
+    document.querySelector('.js-add-source').addEventListener("click", (e) => {
+        e.stopPropagation()
+        document.body.classList.toggle('active-body');
+        document.querySelector(".modal_add-source").classList.toggle('active-modal')
+    })
+    document.querySelector(".modal_add-source").addEventListener("click", (e) => {
+        e.stopPropagation()
+    })
+    document.querySelector(".button-close").addEventListener("click", (e) => {
+        e.stopPropagation()
+        document.body.classList.remove('active-body');
+        document.querySelector(".modal_add-source").classList.remove('active-modal')
+    })
+    document.body.addEventListener("click", () => {
+        document.querySelector(".modal_add-source").classList.remove('active-modal')
+        document.body.classList.remove('active-body');
+    })
+    $('.slct').click(function () {
+        var dropBlock = $(this).parent().find('.drop');
+        if (dropBlock.is(':hidden')) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function () {
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+    $('.select2-multi').select2();
+    document.querySelector('.select2').addEventListener('click',function (evt) {
+      document.querySelector('.slctvvv').style.display = 'none'
+    })
+</script>

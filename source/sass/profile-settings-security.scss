@@ -1,0 +1,149 @@
+@import "templates_style/nav";
+@import "templates_style/header";
+@import "global/common";
+
+.profile-settings {
+  flex-direction: column;
+  .title {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: $color-dark-blue;
+    margin-bottom: 32px;
+  }
+  .first-table {
+    width: 100%;
+    max-width: 1515px;
+    margin-bottom: 32px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    .row {
+      width: 100%;
+      display: flex;
+      margin-bottom: 32px;
+      .select-wrapper {
+        width: 32%;
+        margin-right: 16px;
+        .password-wrapper {
+          position: relative;
+          span {
+            position: absolute;
+          }
+        }
+        .input {
+          width: 100%;
+          height: 56px;
+          padding: 16px;
+        }
+        .select {
+          .slct {
+            height: 56px;
+          }
+        }
+        .wrapper {
+          align-items: center;
+          height: 56px;
+          display: flex;
+
+        }
+      }
+    }
+    .button {
+      width: 176px;
+      height: 46px;
+    }
+  }
+  .second-table {
+    width: 100%;
+    max-width: 1515px;
+    margin-bottom: 32px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    .button {
+      width: 176px;
+      height: 46px;
+      margin-bottom: 0;
+    }
+    .text-style {
+      margin-bottom: 32px;
+    }
+    .wrapper {
+      margin-bottom: 32px;
+      align-items: center;
+      display: flex;
+      .qr-code {
+        width: 228px;
+        height: 228px;
+      }
+      .links {
+        padding-left: 32px;
+        width: 970px;
+        display: flex;
+        flex-direction: column;
+        .text-style {
+          margin-bottom: 16px;
+        }
+        .link-wrapper {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          .title {
+            width: 820px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 0;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    .select-wrapper {
+      width: 468px;
+      margin-bottom: 32px;
+      .input {
+        width: 100%;
+        height: 56px;
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .profile-settings {
+    .second-table {
+      .wrapper {
+        overflow: auto;
+      }
+      .select-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-settings {
+
+    .first-table {
+      .row {
+        flex-direction: column;
+        .select-wrapper {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+  }
+}

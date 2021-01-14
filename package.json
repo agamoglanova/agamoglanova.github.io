@@ -1,0 +1,32 @@
+{
+  "name": "portfolio_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-surge": "^0.1.4",
+    "jquery": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "rimraf": "^2.6.3",
+    "surge": "^0.21.7"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

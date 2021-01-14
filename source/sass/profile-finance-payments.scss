@@ -1,0 +1,79 @@
+@import "templates_style/nav";
+@import "templates_style/header";
+@import "global/common";
+
+.profile-finance-payments {
+  .payments-table {
+    &__top {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 32px;
+      }
+      .padding {
+        padding-left: 56px;
+      }
+      margin-bottom: 10px;
+      .blue {
+        opacity: 1;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+    &__container {
+      .row {
+        .col-36 {
+          display: flex;
+          .margin-right {
+            margin-right: 16px;
+          }
+          .mini-wrapper {
+            display: flex;
+            svg {
+              margin-right: 16px;
+            }
+          }
+        }
+        .blue {
+          opacity: 1;
+        }
+        display: flex;
+        justify-content: space-between;
+        padding: 25.5px 32px;
+      }
+      background: $color-white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+    }
+  }
+}
+
+@media (max-width: 1910px) {
+  .profile-finance-payments {
+    .payments-table {
+      overflow: auto;
+      &__top {
+        width: 1900px;
+      }
+      &__container {
+        width: 1900px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-finance-payments {
+    .payments-table {
+      &__top {
+        display: none;
+      }
+      &__container {
+        overflow: auto;
+        .row {
+          width: 1400px;
+        }
+      }
+    }
+  }
+}

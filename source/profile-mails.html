@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/profile-mails.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+//= templates_html/header.html
+<article>
+    //= templates_html/nav.html
+    <div class="page-container profile-mails">
+        <div class="title">Управление рассылками</div>
+        <div class="tables">
+            <div class="first-table">
+                <div class="title">Типы уведомлений</div>
+                <div class="row margin-bottom">
+                    <div class="item" onclick="this.className = (this.className == 'item' ? 'item-clicked' : 'item')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Новости, акции компании </p>
+                    </div>
+                    <div class="item" onclick="this.className = (this.className == 'item' ? 'item-clicked' : 'item')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Уведомления о выплатах </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item" onclick="this.className = (this.className == 'item' ? 'item-clicked' : 'item')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Уведомления о выплатах </p>
+                    </div>
+                    <div class="item" onclick="this.className = (this.className == 'item' ? 'item-clicked' : 'item')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Уведомления о сообщениях из службы поддержки </p>
+                    </div>
+                </div>
+            </div>
+            <div class="first-table">
+                <div class="title">Типы уведомлений</div>
+                <div class="row margin-bottom">
+                    <div class="item-clicked-opacity" onclick="this.className = (this.className == 'item-clicked-opacity' ? 'item-clicked' : 'item-clicked-opacity')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Новости, акции компании </p>
+                    </div>
+                    <div class="item-clicked-opacity" onclick="this.className = (this.className == 'item-clicked-opacity' ? 'item-clicked' : 'item-clicked-opacity')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Новости, акции компании </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item-clicked-opacity" onclick="this.className = (this.className == 'item-clicked-opacity' ? 'item-clicked' : 'item-clicked-opacity')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Новости, акции компании </p>
+                    </div>
+                    <div class="item-clicked-opacity" onclick="this.className = (this.className == 'item-clicked-opacity' ? 'item-clicked' : 'item-clicked-opacity')">
+                        <div class="checkbox">
+                            <div class="round"></div>
+                        </div>
+                        <p class="table_subtitle"> Новости, акции компании </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</article>

@@ -1,0 +1,143 @@
+@import "templates_style/nav";
+@import "templates_style/header";
+@import "global/common";
+
+.profile-main-container {
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: $color-dark-blue;
+    margin-bottom: 32px;
+  }
+  .personal-table {
+    margin-bottom: 32px;
+    padding: 16px;
+    max-width: 1515px;
+    width: 100%;
+    height: 294px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    .margin-bottom {
+      margin-bottom: 32px;
+    }
+    .mini-row {
+      justify-content: flex-start !important;
+      .select-wrapper {
+        margin-right: 32px;
+      }
+    }
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .select-wrapper {
+        width: 32%;
+        .input {
+          width: 100%;
+          height: 56px;
+          padding: 16px;
+        }
+        .select {
+          .slct {
+            height: 56px;
+          }
+        }
+        .wrapper {
+          align-items: center;
+          height: 56px;
+          display: flex;
+          .container {
+            margin-right: 32px;
+          }
+        }
+      }
+
+    }
+  }
+  .settings-table {
+    margin-bottom: 32px;
+    padding: 16px;
+    max-width: 1515px;
+    width: 100%;
+    height: 182px;
+    background: $color-white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .select-wrapper {
+        width: 32%;
+        .select {
+          .slct {
+            height: 56px;
+          }
+        }
+        .wrapper {
+          align-items: center;
+          height: 56px;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-main-container {
+    .personal-table {
+      .row {
+        .select-wrapper {
+          .wrapper {
+            align-items: flex-start;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-main-container {
+    .personal-table {
+      height: unset;
+
+      .row {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        .select-wrapper {
+          width: 100%;
+          margin-bottom: 16px;
+          .wrapper {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+
+    .settings-table {
+      height: unset;
+
+      .row {
+        flex-direction: column;
+
+        .select-wrapper {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+
+      }
+    }
+  }
+}

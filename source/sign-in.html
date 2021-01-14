@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/sign-in.css">
+</head>
+
+<body>
+  <main class='sign-in'>
+      <div class='form-sign-in modal-panel'>
+        <svg class='logo' width="175" height="105" viewBox="0 0 175 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M76.0436 95.8769L49.0327 52.9275L76.0436 9.97852H57.5437L30.5283 52.9275L57.5437 95.8769H76.0436Z" fill="#1B1393"/>
+            <path d="M99.1798 9.97852H114.6V95.8769H99.1798V9.97852ZM125.731 9.97852H141.151V95.8769H125.731V9.97852ZM152.283 9.97852H167.703V95.8769H152.283V9.97852ZM9.81348 9.97852H25.2337V95.8769H9.81348V9.97852Z" fill="#0D0D0D"/>
+            </svg>
+        <div class='wrapper'>
+            <div> 
+                
+                <input class='input' type="text" placeholder="Логин" style="background-image: url(/images/Profile.png);">
+            </div>
+            <div> 
+                                    
+                <input class='input' type="password" placeholder="Пароль" style="background-image: url(/images/Lock.png);">
+            </div>
+            <div class="container">
+                <div class="round">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox"></label>
+                  <p> Запомнить </p>
+                </div>
+            </div>
+        </div>
+       
+        <button class='button sign-btn' type="submit"> ВОЙТИ </button>
+        <a class='forgot-password'>Забыли пароль?</a>
+      </div>
+      <div class='form-forgot-password modal-panel'  style="display: none" >
+          <svg class='logo' width="175" height="105" viewBox="0 0 175 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M76.0436 95.8769L49.0327 52.9275L76.0436 9.97852H57.5437L30.5283 52.9275L57.5437 95.8769H76.0436Z" fill="#1B1393"/>
+              <path d="M99.1798 9.97852H114.6V95.8769H99.1798V9.97852ZM125.731 9.97852H141.151V95.8769H125.731V9.97852ZM152.283 9.97852H167.703V95.8769H152.283V9.97852ZM9.81348 9.97852H25.2337V95.8769H9.81348V9.97852Z" fill="#0D0D0D"/>
+          </svg>
+          <p> Для восстановления пароля укажите Ваш логин </p>
+          <div class='wrapper'>
+              <div>
+
+                  <input class='input' type="text" placeholder="Логин" style="background-image: url(/images/Profile.png);">
+              </div>
+              <div>
+
+
+              </div>
+
+          </div>
+
+          <button class='button' type="submit"> СБРОСИТЬ </button>
+          <a class='back-to-sign-in'>Назад</a>
+      </div>
+      <div class="loading modal-panel"  style="display: none">
+          <svg class="logo" width="175" height="105" viewBox="0 0 175 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M76.0441 95.8769L49.0332 52.9275L76.0441 9.97852H57.5442L30.5288 52.9275L57.5442 95.8769H76.0441Z" fill="#1B1393"/>
+              <path d="M99.1798 9.97852H114.6V95.8769H99.1798V9.97852ZM125.731 9.97852H141.151V95.8769H125.731V9.97852ZM152.283 9.97852H167.703V95.8769H152.283V9.97852ZM9.81348 9.97852H25.2337V95.8769H9.81348V9.97852Z" fill="#0D0D0D"/>
+          </svg>
+    <p class="table_subtitle">Входим в приложение...</p>
+          <svg  width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="27.3636" cy="27.3636" rx="27.3636" ry="27.3636" fill="#1B1393"/>
+              <ellipse cx="74.2727" cy="35.1819" rx="11.7273" ry="11.7273" fill="#1B1393" fill-opacity="0.25"/>
+              <ellipse cx="35.1819" cy="74.2727" rx="11.7273" ry="11.7273" fill="#1B1393" fill-opacity="0.25"/>
+          </svg>
+
+      </div>
+      <p class='signature'> 2020 © 1K3, Ad Network </p>
+  </main>
+</body>
+
+</html>
+
+<script>
+    document.querySelector('.forgot-password').onclick  = () =>{
+        document.querySelectorAll('.modal-panel').forEach(i =>i.style.display = 'none')
+         document.querySelector('.form-forgot-password').style.display = 'flex';
+    }
+
+    document.querySelector('.back-to-sign-in').onclick  = () =>{
+        document.querySelectorAll('.modal-panel').forEach(i =>i.style.display = 'none')
+        document.querySelector('.form-sign-in').style.display = 'flex'
+    }
+    document.querySelector('.sign-btn').onclick  = () =>{
+        document.querySelectorAll('.modal-panel').forEach(i =>i.style.display = 'none')
+        document.querySelector('.loading').style.display = 'flex'
+        document.body.style.backgroundColor = '#fff'
+    }
+
+</script>

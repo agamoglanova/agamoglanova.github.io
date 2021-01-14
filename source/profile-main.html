@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/profile-main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+//= templates_html/header.html
+<article>
+    //= templates_html/nav.html
+    <div class="page-container profile-main-container">
+        <div class="title">Основная информация</div>
+        <div class="personal-table">
+            <div class="title">Ваш адрес</div>
+            <div class="row margin-bottom">
+                <div class="select-wrapper">
+                <p class="select_title"> Имя </p>
+                <input class="input" type="text" placeholder="Введите имя">
+            </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Фамилия </p>
+                    <input class="input" type="text" placeholder="Введите фамилию">
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Тип аккаунта </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="select-wrapper">
+                    <p class="select_title"> Компания </p>
+                    <input class="input" type="text" placeholder="Введите название компании">
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Дата рождения </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Пол </p>
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="round">
+                                <input type="checkbox" id="checkbox"/>
+                                <label for="checkbox"></label>
+                                <p class="text-style"> Мужской </p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="round">
+                                <input type="checkbox" id="checkbox2"/>
+                                <label for="checkbox2"></label>
+                                <p class="text-style"> Женский </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="personal-table">
+            <div class="title">Личные данные</div>
+            <div class="row margin-bottom">
+                <div class="select-wrapper">
+                    <p class="select_title"> Имя </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Фамилия </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Тип аккаунта </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row mini-row">
+                <div class="select-wrapper">
+                    <p class="select_title"> Компания </p>
+                    <input class="input" type="text" placeholder="Введите название компании">
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Дата рождения </p>
+                    <input class="input" type="text" placeholder="Введите название компании">
+                </div>
+            </div>
+        </div>
+        <div class="settings-table">
+            <div class="title">Настройки интерфейса</div>
+            <div class="row">
+                <div class="select-wrapper">
+                    <p class="select_title"> Имя </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Фамилия </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p class="select_title"> Тип аккаунта </p>
+                    <div class="select">
+                        <a href="javascript:void(0);" class="slct"
+                           style="background-image: url(images/Arrow.png);"><span>Выберите</span></a>
+                        <ul class="drop">
+                            <li><a href=""><span>Страна 1</span></a></li>
+                            <li><a href=""><span>Страна 2</span></a></li>
+                        </ul>
+                        <input type="hidden" id="select"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<script>
+    $('.slct').click(function(){
+        var dropBlock = $(this).parent().find('.drop');
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function(){
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+</script>
